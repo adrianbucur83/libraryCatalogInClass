@@ -40,6 +40,7 @@ public class App
         secondBook.numberOfPages = 200;
         ((ArtAlbum) secondBook).paperQuality = "fine";
 
+
         Book thirdBook = new ArtAlbum();
         thirdBook.name = "Third book";
         thirdBook.numberOfPages = 300;
@@ -52,6 +53,7 @@ public class App
         myLibrary.listAllBooks();
 
         myLibrary.deleteBook(firstBook);
+        myLibrary.deleteBook(secondBook);
 
         myLibrary.deleteBookByName("Third book");
 
